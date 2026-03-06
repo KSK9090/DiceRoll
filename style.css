@@ -1,0 +1,91 @@
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 3em;
+}
+
+#art {
+  text-align: center;  
+}
+
+#anzahl {
+  text-align: center;  
+}
+.würfel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.würfel button {
+    font-size: 3em;
+    padding: 15px 25px;
+   
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.3);
+    cursor: pointer; 
+}
+
+.würfel button:hover {
+    transform: scale(1.1);
+}
+
+.würfel button:active {
+    background-color: white;
+    transform: scale(0.95);
+}
+
+#inputAnzahl {
+    display: block;
+    margin: auto;
+    border-color: blue;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+#würfelButton {
+    display: block;
+    margin: auto;
+    padding: 15px 15px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#würfelButton:hover {
+    background-color: rgb(14, 209, 102);
+}
+
+#würfelButton:active{
+    transform: scale(1.25);
+}
+
+#würfel4 {
+    background-color: aqua;
+}
+
+#würfel6 {
+    background-color: rgb(138, 82, 176);
+}
+
+#würfel8 {
+    background-color: rgb(188, 84, 146);
+}
+
+#würfel10 {
+    background-color: rgb(156, 141, 45);
+}
+
+#würfel12 {
+    background-color: rgb(193, 159, 152);
+}
+
+#würfel20 {
+    background-color: rgb(229, 12, 12);
+}
+
+#label1 {
+    display:block;
+    text-align: center;
+    white-space: pre-line;
+    font-size: 1.5em; 
+}
