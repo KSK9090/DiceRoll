@@ -24,6 +24,9 @@ document.getElementById("würfel20").onclick = function(){
 }
 document.getElementById("würfelButton").onclick = function(){
     
+    würfelgeräusch.currentTime = 0;
+    würfelgeräusch.play();
+
     let inputAnzahl = Number(document.getElementById("inputAnzahl").value);
     let start = 0;
     label1.textContent = "";
@@ -42,6 +45,7 @@ document.getElementById("würfelButton").onclick = function(){
         label1.innerHTML += "\n--------\n" + gesamt;
     }
 
-
-
 }
+
+let würfelgeräusch = new Audio("würfel.mp3");
+
