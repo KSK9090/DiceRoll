@@ -23,7 +23,9 @@ document.getElementById("würfel20").onclick = function(){
     gewählterWürfel = 20;
 }
 document.getElementById("würfelButton").onclick = function(){
-    
+
+let würfelgeräusch = new Audio("würfel.mp3");
+
     würfelgeräusch.currentTime = 0;
     würfelgeräusch.play();
 
@@ -47,5 +49,5 @@ document.getElementById("würfelButton").onclick = function(){
 
 }
 
-let würfelgeräusch = new Audio("würfel.mp3");
+
 
