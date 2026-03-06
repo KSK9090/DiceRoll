@@ -38,16 +38,20 @@ let würfelgeräusch = new Audio("würfel.mp3");
     while(start < inputAnzahl){
 
         let wurf = Math.floor(Math.random() * gewählterWürfel) + 1;
-        label1.textContent += wurf + " ";
+        label1.textContent += wurf;
         gesamt += wurf;
         start++;
     }
 
-    if(inputAnzahl > 1){
+    if(inputAnzahl = 1){
         label1.innerHTML += "\n--------\n" + gesamt;
     }
-
-}
+/*
+    if(inputAnzahl >= 10) {
+        label1.innerHTML.u +=
+    }
+*/
+} 
 
 
 
