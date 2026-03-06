@@ -1,4 +1,4 @@
-# Dice Roller
+# Dice Roll
 
 Ein einfacher **Würfel-Generator im Browser**, entwickelt mit **HTML, CSS und JavaScript**. Dieses Projekt diente als Einstieg in die Welt der Webseiten.
 
