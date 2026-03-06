@@ -39,12 +39,11 @@ let würfelgeräusch = new Audio("würfel.mp3");
 
         let wurf = Math.floor(Math.random() * gewählterWürfel) + 1;
         label1.textContent += wurf + " ";
-
         gesamt += wurf;
         start++;
     }
 
-    if(inputAnzahl = 1){
+    if(inputAnzahl == 1){
         label1.innerHTML += "\n--------\n" + gesamt;
     }
 /*
