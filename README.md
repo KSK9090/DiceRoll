@@ -6,7 +6,7 @@ Die Anwendung ermöglicht das Würfeln verschiedener Würfeltypen, wie z.B. in *
 
 ## Live-Demo
 
-https://ksk9090.github.io/diceroll/
+https://ksk9090.github.io/DiceRoll/
 
 ---
 
