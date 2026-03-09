@@ -43,8 +43,8 @@ let würfelgeräusch = new Audio("würfel.mp3");
         start++;
     }
 
-    if(inputAnzahl == 1){
-        label1.innerHTML += "\n--------\n" + gesamt;
+    if(inputAnzahl > 1){
+    label1.innerHTML += "<br>--------<br>" + gesamt;   
     }
 /*
     if(inputAnzahl >= 10) {
