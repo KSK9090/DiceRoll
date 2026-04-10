@@ -1,4 +1,5 @@
 let gewählterWürfel;
+let label1 = document.getElementByID("label1");
 document.getElementById("würfel4").onclick = function(){
     gewählterWürfel = 4;
 }
