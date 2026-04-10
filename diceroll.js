@@ -24,34 +24,39 @@ document.getElementById("würfel20").onclick = function(){
 }
 document.getElementById("würfelButton").onclick = function(){
 
+    if (!gewählterWürfel) {
+    label1.innerHTML = "Bitte wähle zuerst einen Würfel!";
+    return;
+}
+
 let würfelgeräusch = new Audio("würfel.mp3");
 
-    würfelgeräusch.currentTime = 0;
-    würfelgeräusch.play();
+würfelgeräusch.currentTime = 0;
+würfelgeräusch.play();
 
-    let inputAnzahl = Number(document.getElementById("inputAnzahl").value);
-    let start = 0;
-    label1.textContent = "";
+let inputAnzahl = Number(document.getElementById("inputAnzahl").value);
+let start = 0;
+label1.innerHTML = "";
 
-    let gesamt = 0;
+let gesamt = 0;
 
-    while(start < inputAnzahl){
 
-        let wurf = Math.floor(Math.random() * gewählterWürfel) + 1;
-        label1.textContent += wurf + " ";
-        gesamt += wurf;
-        start++;
+while(start < inputAnzahl){
+
+    let wurf = Math.floor(Math.random() * gewählterWürfel) + 1;
+
+    label1.innerHTML += wurf + " ";
+    gesamt += wurf;
+
+    start++;
+
+    if(start % 5 === 0){
+        label1.innerHTML += "<br>";
     }
-
-    if(inputAnzahl > 1){
-    label1.innerHTML += "<br>--------<br>" + gesamt;   
-    }
-/*
-    if(inputAnzahl >= 10) {
-        label1.innerHTML.u +=
-    }
-*/
-} 
+}
 
 
-
+if(inputAnzahl > 1){
+    label1.innerHTML += "<br>--------<br>" + gesamt;
+}
+}
